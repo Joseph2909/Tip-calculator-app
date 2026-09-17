@@ -1,0 +1,69 @@
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+* {
+  --green-400: hsl(172, 67%, 45%);
+  --green-900: hsl(183, 100%, 15%);
+  --grey-500: hsl(186, 14%, 43%);
+  --grey-400: hsl(184, 14%, 56%);
+  --grey-200: hsl(185, 41%, 84%);
+  --grey-50: hsl(189, 47%, 97%);
+  --white: hsl(0, 100%, 100%);
+  font-weight: 700;
+}
+:root {
+  font-family: "Space Mono", sans-serif;
+}
+p {
+  color: var(--grey-500);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--grey-200);
+}
+.splitter-logo {
+  margin: 2.5rem 0;
+}
+.container {
+  background-color: var(--white);
+  width: 100%;
+  height: 50rem;
+  padding: 1rem;
+  border-radius: 3rem 3rem 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+.calculator-contents-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 3rem 0 1rem;
+}
+.bill-container {
+  width: 100%;
+}
+.bill-text {
+  margin-bottom: 0.7rem;
+}
+input {
+  text-align: right;
+  font-size: 1.5rem;
+  color: var(--green-900);
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--grey-50);
+  border-style: none;
+  background-image: url("./images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
