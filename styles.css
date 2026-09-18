@@ -43,11 +43,11 @@ body {
   /* justify-content: center; */
 }
 .calculator-contents-container {
-  width: 80%;
+  width: 90%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 0 3rem 0 1rem;
+  padding: 0 1rem 0 1rem;
 }
 .bill-container {
   width: 100%;
@@ -59,11 +59,44 @@ input {
   text-align: right;
   font-size: 1.5rem;
   color: var(--green-900);
-  width: 100%;
+  width: 95%;
   padding: 0.5rem;
   background-color: var(--grey-50);
   border-style: none;
   background-image: url("./images/icon-dollar.svg");
   background-repeat: no-repeat;
   background-position: 10px center;
+  outline: none;
+  font-family: "Space Mono", sans-serif;
+  transition: border-color 0.3s ease-in-out;
+}
+input:focus {
+  border-style: solid;
+  border-color: var(--green-400);
+}
+input::placeholder {
+  color: var(--green-900);
+}
+.select-tip-container {
+  width: 100%;
+  text-align: start;
+  padding-right: 0;
+}
+.grid-card {
+  display: flex;
+  background-color: var(--green-900);
+  border-radius: 0.4rem;
+  height: 2.8rem;
+  align-items: center;
+  justify-content: center;
+}
+.grid-card p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--white);
+}
+.tips-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
