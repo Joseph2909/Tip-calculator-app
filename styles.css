@@ -49,13 +49,18 @@ body {
   flex-direction: column;
   padding: 0 1rem 0 1rem;
 }
-.bill-container {
+.bill-container,
+.number-of-people-container {
   width: 100%;
+}
+.bill-container p {
+  font-family: "Space Mono", sans-serif;
 }
 .bill-text {
   margin-bottom: 0.7rem;
 }
-input {
+.bill,
+.number-of-people {
   text-align: right;
   font-size: 1.5rem;
   color: var(--green-900);
@@ -81,22 +86,59 @@ input::placeholder {
   width: 100%;
   text-align: start;
   padding-right: 0;
+  margin-top: 0.7rem;
 }
 .grid-card {
   display: flex;
   background-color: var(--green-900);
   border-radius: 0.4rem;
-  height: 2.8rem;
+  height: 3.1rem;
   align-items: center;
   justify-content: center;
 }
 .grid-card p {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: var(--white);
 }
 .tips-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+}
+.custom {
+  text-align: right;
+  font-size: 1.5rem;
+  color: var(--green-900);
+  width: 90%;
+  padding-right: 1rem;
+  height: 3.1rem;
+  background-color: var(--grey-50);
+  border-style: none;
+  outline: none;
+  font-family: "Space Mono", sans-serif;
+  border-radius: 0.4rem;
+  transition: border-color 0.3s ease-in-out;
+}
+.custom:focus {
+  border-style: solid;
+  border-color: var(--green-400);
+}
+.custom::placeholder {
+  color: var(--grey-500);
+}
+.number-of-people {
+  background-image: url("./images/icon-person.svg");
+}
+.number-of-people-container {
+  margin-top: 0.7rem;
+}
+
+.calculator-results-container {
+  margin-top: 2rem;
+  background-color: var(--green-900);
+  width: 80%;
+  height: 13rem;
+  border-radius: 1rem;
+  padding: 1rem;
 }
